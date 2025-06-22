@@ -14,7 +14,7 @@ This project is a simple Active Directory lab setup designed to help me build ha
 | CLIENT1 | Domain Member     | Windows 10     | client1  |
 
 - **Domain**: `tech.lab`
-- **Network**: ``
+- **Network**: `VNet`
 - **Platform**: `Azure`
 
 ***NOTE*** : ***Make sure both VMs are in the same, resource group, Network(Virtual Network), and Region.***
@@ -24,11 +24,14 @@ This project is a simple Active Directory lab setup designed to help me build ha
 - Region East US-2(if applicable)
 - Image: Windows Server 2022 Data Center: Hot patch
 
+`Machine Creation > Accept license > Network > Create`
+
+
 
 <img src="https://github.com/user-attachments/assets/915a2fa7-bd4a-4c3f-bae4-694c41040b7a" height="35%" width="35%" alt="Disk Sanitization Steps"/>
 <img src="https://github.com/user-attachments/assets/2ed88557-6d94-475e-9a69-d58c0fda6185" height="35%" width="35%" alt="Disk Sanitization Steps"/>
 
-`Machine Creation > Accept license > Network > Create`
+
 
 ### Client-1
 
