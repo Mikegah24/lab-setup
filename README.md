@@ -1,4 +1,10 @@
-# lab-setup
+<img src="https://github.com/user-attachments/assets/22c3bd7f-502f-4ea3-bd90-46030294f1a2" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+# Active Directory Lab for IT Fundamentals
+
+
+This project is a simple Active Directory lab setup designed to help me build hands-on IT skills. It covers domain setup, user and OU management, Group Policy configuration, and basic security scenarios like account lockouts. It’s part of my learning path toward a career in IT and preparing for certifications like Security+.
+
 
 ## Lab Overview
 
@@ -8,7 +14,7 @@
 | CLIENT1 | Domain Member     | Windows 10     | client1  |
 
 - **Domain**: `tech.lab`
-- **Network**: 
+- **Network**: ``
 - **Platform**: `Azure`
 
 ***NOTE*** : ***Make sure both VMs are in the same, resource group, Network(Virtual Network), and Region.***
