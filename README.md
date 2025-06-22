@@ -91,5 +91,33 @@ If prompted about security certificate problem just select yes.
 
 <img src="https://github.com/user-attachments/assets/083194f4-61df-4057-a638-9790ed5f7366" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
+### Step 2
+## Now we can attach the Client computer to the DC
+- Start the machine and login via Remote Desktop.
+- Go to System, Advanced System Settings.
+- System properties, Computer name, change name to Client-1, Select Change.
+- On `Memeber of`, select Domain, and Enter domain name of the DC we created.
+- Then, Enter domain account name and password
+- IF successful, You shoud see a "Welcome to the tech.lab domain" prompt, then restart.
+
+<img src="https://github.com/user-attachments/assets/265cec82-bb2b-45e7-8596-8b90ffd1562f" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+<img src="https://github.com/user-attachments/assets/9cc540a0-0b4b-435e-a438-0e9dadec737d" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
+**From now to login to the client you will have to do**: `tech.lab\your user account`
+
+Just like this:
+
+<img src="https://github.com/user-attachments/assets/d689eee8-320b-48e4-ab2d-a0a066119b03" height="35%" width="35%" alt="Disk Sanitization Steps"/>
+
+### Verify that Client-1 is now part of the Domain...
+
+- On the start menu, Select `Windows Administrative Tools Drop-down`
+- Select Active Directory Users and Computers
+- Select Drop-down on the domain controller
+- Select Computers, and you should see Client-1.
+
+<img src="https://github.com/user-attachments/assets/7ebd74f7-7093-465d-be25-70654f1a899c" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 
+***AND JUST LIKE THAT WE HAVE OUR DOMAIN AND USER COMPUTER SETUP!!!!!!!!!!!!!!***
