@@ -18,3 +18,4 @@
 <img src="https://github.com/user-attachments/assets/915a2fa7-bd4a-4c3f-bae4-694c41040b7a" height="35%" width="35%" alt="Disk Sanitization Steps"/>
 <img src="https://github.com/user-attachments/assets/2ed88557-6d94-475e-9a69-d58c0fda6185" height="35%" width="35%" alt="Disk Sanitization Steps"/>
 
+### DC-1: Domain Controller
