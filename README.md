@@ -28,8 +28,8 @@ This project is a simple Active Directory lab setup designed to help me build ha
 
 
 
-<img src="https://github.com/user-attachments/assets/915a2fa7-bd4a-4c3f-bae4-694c41040b7a" height="35%" width="35%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/user-attachments/assets/2ed88557-6d94-475e-9a69-d58c0fda6185" height="35%" width="35%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/915a2fa7-bd4a-4c3f-bae4-694c41040b7a" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/2ed88557-6d94-475e-9a69-d58c0fda6185" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 
 
@@ -38,7 +38,7 @@ This project is a simple Active Directory lab setup designed to help me build ha
 - Repeat the same Steps as DC-1
 - Set the disk image to `Windows 10 Prp`
 
-<img src="https://github.com/user-attachments/assets/20aa4878-cbbd-4cc1-bf92-350fb54417f6" height="35%" width="35%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/20aa4878-cbbd-4cc1-bf92-350fb54417f6" height="45%" width="45%" alt="Disk Sanitization Steps"/>
 
 ### Set DC-1 IP address to static
 
