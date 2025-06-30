@@ -1,9 +1,21 @@
 <img src="https://github.com/user-attachments/assets/22c3bd7f-502f-4ea3-bd90-46030294f1a2" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
-# Active Directory Lab for IT Fundamentals
+# On-Premises Active Directory Deployed in the Cloud (Azure)
 
 
-This project is a simple Active Directory lab setup designed to help me build hands-on IT skills. It covers domain setup, user and OU management, Group Policy configuration, and basic security scenarios like account lockouts. It’s part of my learning path toward a career in IT and preparing for certifications like Security+.
+This project outlines the implementation of on-premises Active Directory within Azure Virtual Machines.
+
+## Environments and Technologies Used
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Active Directory Domain Services
+- Powershell
+
+## Operating Sytems
+
+- Windows Server 2022
+- Windows 10 (21H2)
 
 
 ## Lab Overview
@@ -19,12 +31,14 @@ This project is a simple Active Directory lab setup designed to help me build ha
 
 ***NOTE*** : ***Make sure both VMs are in the same, resource group, Network(Virtual Network), and Region.***
 
+# Step 1
+
 ### DC-1: Domain Controller
 - Set the name to DC-1
 - Region East US-2(if applicable)
 - Image: Windows Server 2022 Data Center: Hot patch
 
-`Machine Creation > Accept license > Network > Create`
+- `Machine Creation > Accept license > Network > Create`
 
 
 
@@ -33,16 +47,16 @@ This project is a simple Active Directory lab setup designed to help me build ha
 
 
 
-### Client-1
+### Client-1 Machine
 
 - Repeat the same Steps as DC-1
-- Set the disk image to `Windows 10 Prp`
+- Set the disk image to `Windows 10 Pro`
 
 <img src="https://github.com/user-attachments/assets/20aa4878-cbbd-4cc1-bf92-350fb54417f6" height="45%" width="45%" alt="Disk Sanitization Steps"/>
 
 ### Set DC-1 IP address to static
 
-`Networking settings> Network Interface/ Ip configuration >  ip config > static`
+- `Networking settings> Network Interface/ Ip configuration >  ip config > static`
 
 
 <img src="https://github.com/user-attachments/assets/3cf34f23-a3f7-4426-b249-fec69a426074" height="20%" width="20%" alt="Disk Sanitization Steps"/>
@@ -53,9 +67,11 @@ This project is a simple Active Directory lab setup designed to help me build ha
 
 <img src="https://github.com/user-attachments/assets/885b59ad-1b68-4074-b4a6-8c07faa1df32" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
+# Step 2
+
 ### Set Client-1 DNS server to DC-1 ip address
 
-`Network settings > Network Interface/ Ip configuration > DNS servers > Custom > save`
+- `Network settings > Network Interface/ Ip configuration > DNS servers > Custom > save`
 
 <img src="https://github.com/user-attachments/assets/260d9797-0c32-42a7-b8c1-119303f114b1" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <img src="https://github.com/user-attachments/assets/3e5b2a66-2e25-410f-9e0a-bfaea3ce1b3a" height="50%" width="50%" alt="Disk Sanitization Steps"/>
@@ -64,6 +80,7 @@ This project is a simple Active Directory lab setup designed to help me build ha
 
 ***At this stage, we’re ready to promote the server to a Domain Controller. This is where we install Active Directory Domain Services (AD DS) and create our new domain homelab.local. This step establishes the foundation for centralized user, group, and policy management across our network.***
 
+# Step 3
 - Login into the Domain Controller using Remote Desktop.
 - Enter IP address of the Domain Controller and login.
 - login name with and password
@@ -75,7 +92,7 @@ If prompted about security certificate problem just select yes.
 
 ***Once the machine has loaded we are ready to install Active Directory Services***
 
-### Step 1.
+# Step 4
 
 - On the server manager window, select Manage in the top right, then `Add roles and Features`
 - Keep everything by default
@@ -100,7 +117,7 @@ If prompted about security certificate problem just select yes.
 
 <img src="https://github.com/user-attachments/assets/083194f4-61df-4057-a638-9790ed5f7366" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
-### Step 2
+# Step 5
 ## Now we can attach the Client computer to the DC
 - Start the machine and login via Remote Desktop.
 - Go to System, Advanced System Settings.
